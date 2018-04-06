@@ -14,10 +14,12 @@ public function landing(){
     return redirect()->route('signup');
 }
 public function go_to_signup(Request $request){
-        return view('signup');
+        return view('signup',["Error"=>""]);
 
 }
 public function signup(Request $request){
+        
+        if($request['password'] == $request['cpassword']){
         DB::table('users_table')->insert([
             'First_Name' => $request['fname'],
             'Last_Name' => $request['lname'],
@@ -25,8 +27,16 @@ public function signup(Request $request){
             'DOB' => $request['dob'],
             'Email' => $request['email'],
             'Mobile No' => $request['Mobile']
-        ]);
+        ]);  
         return view('signin');
+        
+        
+    }
+    else{    
+        return view('signup',["Error"=>"Passwords do not match"]);    
+        
+    }
+
     }
 
 public function signin(Request $request){
