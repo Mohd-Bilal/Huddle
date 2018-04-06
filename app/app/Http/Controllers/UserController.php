@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller{
 
 public function landing(){
-    return redirect()->route('signup');
+    return view('signup',['Error'=>'']);
 }
 public function go_to_signup(Request $request){
         return view('signup',["Error"=>""]);
@@ -28,7 +28,7 @@ public function signup(Request $request){
             'Email' => $request['email'],
             'Mobile No' => $request['Mobile']
         ]);  
-        return view('signin');
+        return redirect()->route('signin',['Error'=>""]);
         
         
     }

@@ -26,8 +26,8 @@ Route::post('/postsignup',[
 
 ]);
 Route::get('/signin', function () {
-    return view('signin')->with("Error","");
-});
+    return view('signin',["Error"=>""]);
+})->name('signin');
 
 Route::post('/postsignin',[
     'uses'=>'UserController@signin',

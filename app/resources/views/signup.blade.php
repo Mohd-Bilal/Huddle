@@ -3,26 +3,76 @@
 @section('title')
     Hellworld
 @endsection
+<head>
+<link rel='stylesheet' href={{URL::to('src/css/signup1.css')}}>
+</head>
 @section('body')
+<div class="container">
+  
+  <h2>SIGNUP</h2>
+<br>  
+<form action="{{route('postsignup')}}" method="post">
+    <div class="group">      
+      <input type="text" name="fname"required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>First Name</label>
+    </div>
+      
 
-    <html>
-    <h1>
-       SIGNUP 
-    </h1>
-    <form action="{{route('postsignup')}}" method="post">
-      <label>First Name</label>   <input type="text" name="fname"><br><br>
-      <label>Last Name</label><input type="text" name="lname"><br><br>
-      <label>Email</label><input type="text" name="email"><br><br>
-      @if($Error == "Wrong Password")
+
+
+ <div class="group">      
+      <input type="text" name="lname"required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Last Name</label>
+    </div>
+      
+      <div class="group">      
+      <input type="text" name="email"required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Email</label>
+    </div>
+@if($Error == "Wrong Password")
       <div>Wrong Password</div>
       @endif
-      <label>Password</label><input type="password" name="password"><br><br>
-      <label>Confirm Password</label><input type="password" name="cpassword"><br><br>
-      <label>Date of Birth</label><input type="text" name="dob"><br><br>
-      <label>Mobile No</label><input type="text" name="Mobile"><br><br>
-    <input type='hidden' name='_token' value='{{Session::token()}}'>
+    <div class="group">      
+      <input type="password" name="password"required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Password</label>
+    </div>
+    
+    <div class="group">      
+      <input type="password" name="cpassword"required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Confirm Password</label>
+    </div>
 
-        <button type="Submit">Submit</button>
-    </form>
-</html>
+    <div class="group">      
+     <input type="Date" name="dob"required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>DOB</label>
+    </div>    
+
+    <div class="group">      
+      <input type="text" name="Mobile" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Mobile No</label>
+    </div>
+
+    <div class="group">   
+    <input type='hidden' name='_token' value='{{Session::token()}}'>
+      
+      <button type="Submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+    
+
 @endsection
