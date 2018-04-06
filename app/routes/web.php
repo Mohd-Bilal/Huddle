@@ -20,3 +20,8 @@ Route::get('/signup',[
     'as'=>'signup'
 
 ]);
+Route::post('/postsignup',[
+    'uses'=>'UserController@signup',
+    'as'=>'postsignup'
+
+]);
