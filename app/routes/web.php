@@ -35,11 +35,11 @@ Route::post('/postsignin',[
 ]);
 Route::get('/quiz', function () {
     return view('quiz');
-});
+})->name('quiz');
 Route::post('/interest',[
     'uses'=>'UserController@interests',
     'as' => 'interest'
     ]);
 Route::get('/home',function(){
     return view('home');
-});
+})->name('home');

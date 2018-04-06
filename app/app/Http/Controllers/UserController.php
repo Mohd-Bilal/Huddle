@@ -42,7 +42,7 @@ public function signup(Request $request){
 public function signin(Request $request){
       $password = DB::table('users_table')->where('Email',$request['email'])->value('Password');
       if( $password == $request['password']){
-         return redirect()->route('home');
+         return redirect()->route('quiz');
       }
       else {
          return view('signin',['Error'=>'Wrong password']);

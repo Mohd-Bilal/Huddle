@@ -10,7 +10,7 @@
 <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6 text-center">
-    <form action="{{route('postsignin')}}" method="post">
+    <form action="{{route('home')}}" method="get">
       <div class="form-group">
       <div id="Q1">
         <label for="Q1">Q1:What is your age?</label><br>
@@ -66,7 +66,5 @@
 </div>
 <script>
 var token='{{Session::token()}}';
-var url='{{route('interest')}}';
-var userid=\Auth::user()->id;
 </script>
 @endsection
