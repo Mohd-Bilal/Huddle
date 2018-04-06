@@ -42,10 +42,19 @@ public function signup(Request $request){
 public function signin(Request $request){
       $password = DB::table('users_table')->where('Email',$request['email'])->value('Password');
       if( $password == $request['password']){
-         return view('nextpage');
+         return redirect()->route('home');
       }
       else {
          return view('signin',['Error'=>'Wrong password']);
       }
 }
+public function interests(Request $request){
+    $interest = serialize($request['body']);
+    DB::table('users_table')->insert([
+        'user_id' => $request['id'],
+        'interest' => $interest
+    ]);  
+    return redirect()->route('home');
+}
+
 }

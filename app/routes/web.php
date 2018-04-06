@@ -36,3 +36,10 @@ Route::post('/postsignin',[
 Route::get('/quiz', function () {
     return view('quiz');
 });
+Route::post('/interest',[
+    'uses'=>'UserController@interests',
+    'as' => 'interest'
+    ]);
+Route::get('/home',function(){
+    return view('home');
+});
