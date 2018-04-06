@@ -33,3 +33,6 @@ Route::post('/postsignin',[
     'uses'=>'UserController@signin',
     'as'=>'postsignin'
 ]);
+Route::get('/quiz', function () {
+    return view('quiz');
+});
