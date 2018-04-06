@@ -74,48 +74,48 @@ body {font-family: Arial;}
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'London')">Courses</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Become Tutor</button>
-  
+
 </div><br><br>
 <div class="col-sm-4">
   <img src="music.jpg" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Music</b></h4> 
-    <p></p> 
+    <h4><b>Music</b></h4>
+    <p></p>
   </div>
 </div>
 <div class="col-sm-4">
   <img src="engineer.jpg" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Engineering</b></h4> 
-    <p></p> 
+    <h4><b>Engineering</b></h4>
+    <p></p>
   </div>
 </div>
   <div class="col-sm-4">
   <img src="sports.jpg" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Sports</b></h4> 
-    <p></p> 
+    <h4><b>Sports</b></h4>
+    <p></p>
   </div></div>
 
-  
+
   <div class="col-sm-4">
   <img src="developer.jpeg" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Developer</b></h4> 
-    <p></p> 
+    <h4><b>Developer</b></h4>
+    <p></p>
   </div>
 </div>
 <div class="col-sm-4">
   <img src="billionaire.jpg" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Billionaire</b></h4> 
-    <p></p> 
+    <h4><b>Billionaire</b></h4>
+    <p></p>
   </div></div>
   <div class="col-sm-4">
   <img src="doctor.jpg" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Doctor</b></h4> 
-    <p></p> 
+    <h4><b>Doctor</b></h4>
+    <p></p>
   </div>
 <script>
 function openCity(evt, cityName) {
@@ -132,12 +132,7 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 </script>
-     
+
 
 </body>
-</html> 
-
-
-
-
-  
+</html>
