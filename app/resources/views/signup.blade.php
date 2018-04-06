@@ -9,11 +9,17 @@
     <h1>
        SIGNUP 
     </h1>
-    <form action="{{route('signup')}}" method="post">
-      First Name   <input type="text" name="username"><br><br>
-      Last Name<input type="password" name="password"><br><br>
+    <form action="{{route('postsignup')}}" method="post">
+      First Name   <input type="text" name="fname"><br><br>
+      Last Name<input type="text" name="lname"><br><br>
+      Email<input type="text" name="email"><br><br>
+      Password<input type="password" name="password"><br><br>
+      Confirm Password<input type="password" name="cpassword"><br><br>
+      Date of Birth<input type="text" name="dob"><br><br>
+      Mobile No<input type="text" name="Mobile"><br><br>
+    <input type='hidden' name='_token' value='{{Session::token()}}'>
 
-        <input value="Submit" type="submit">
+        <button type="Submit">Submit</button>
     </form>
 </html>
 @endsection
