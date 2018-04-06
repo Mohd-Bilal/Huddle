@@ -77,44 +77,44 @@ body {font-family: Arial;}
   
 </div><br><br>
 <div class="col-sm-4">
-  <img src="music.jpg" alt="Avatar" style="width:100%">
+  <img src="{{asset('src/css/music.jpg')}}" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Music</b></h4> 
+    <h4 id="secpage"><b>Music</b></h4> 
     <p></p> 
   </div>
 </div>
 <div class="col-sm-4">
-  <img src="engineer.jpg" alt="Avatar" style="width:100%">
+  <img src="{{asset('src/css/engineer.jpg')}}" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Engineering</b></h4> 
+    <h4 id="secpage"><b>Engineering</b></h4> 
     <p></p> 
   </div>
 </div>
   <div class="col-sm-4">
-  <img src="sports.jpg" alt="Avatar" style="width:100%">
+  <img src="{{asset('src/css/sports.jpg')}}" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Sports</b></h4> 
+    <h4 id="secpage"><b>Sports</b></h4> 
     <p></p> 
   </div></div>
 
   
   <div class="col-sm-4">
-  <img src="developer.jpeg" alt="Avatar" style="width:100%">
+  <img src="{{asset('src/css/developer.jpeg')}}" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Developer</b></h4> 
+    <h4 id="secpage"><b>Developer</b></h4> 
     <p></p> 
   </div>
 </div>
 <div class="col-sm-4">
-  <img src="billionaire.jpg" alt="Avatar" style="width:100%">
+  <img src="{{asset('src/css/billionaire.jpg')}}" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Billionaire</b></h4> 
+    <h4 id="secpage"><b>Billionaire</b></h4> 
     <p></p> 
   </div></div>
   <div class="col-sm-4">
-  <img src="doctor.jpg" alt="Avatar" style="width:100%">
+  <img src="{{asset('src/css/doctor.jpg')}}" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Doctor</b></h4> 
+    <h4 id="secpage"><b>Doctor</b></h4> 
     <p></p> 
   </div>
 <script>

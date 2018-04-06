@@ -64,3 +64,9 @@
 
 //     })
 // });
+$('#secpage').on('click',function(){
+    $.ajax({
+        method:'GET',
+        url:route('secpage')
+    })
+});
