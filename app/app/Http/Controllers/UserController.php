@@ -12,7 +12,7 @@ class UserController extends Controller{
 
 public function landing(){
     return redirect()->route('signup');
-}    
+}
 public function go_to_signup(Request $request){
         return view('signup',["Error"=>""]);
 
@@ -28,12 +28,24 @@ public function signup(Request $request){
             'Email' => $request['email'],
             'Mobile No' => $request['Mobile']
         ]);  
-        return view('Home');    
+        return view('signin');
+        
         
     }
     else{    
         return view('signup',["Error"=>"Passwords do not match"]);    
         
     }
+
+    }
+
+public function signin(Request $request){
+      $password = DB::table('users_table')->where('Email',$request['email'])->value('Password');
+      if( $password == $request['password']){
+         return view('nextpage');
+      }
+      else {
+         return view('signin',['Error'=>'Wrong password']);
+      }
 }
 }

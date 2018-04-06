@@ -25,3 +25,11 @@ Route::post('/postsignup',[
     'as'=>'postsignup'
 
 ]);
+Route::get('/signin', function () {
+    return view('signin')->with("Error","");
+});
+
+Route::post('/postsignin',[
+    'uses'=>'UserController@signin',
+    'as'=>'postsignin'
+]);
