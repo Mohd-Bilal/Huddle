@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-});
-Route::get('/signup',function(){
-    return view('signup');
+Route::get('/',[
+    'uses'=>'UserController@landing',
+    'as'=>'/'
+]);
+Route::get('/signup',[
+    'uses'=>'UserController@go_to_signup',
+    'as'=>'signup'
 
-})->name('signup');
+]);
