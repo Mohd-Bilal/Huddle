@@ -23,7 +23,7 @@
         <label for="Q2">Q2:How do you see your Future?</label><br>
         <input type="checkbox" id="I4" value="Bike"> Bright and Sunny
         <input type="checkbox" id="I5" value="Bike"> Misty and Foggy
-        <input type="checkbox" id="I6" value="Bike"> <br><br>
+        <input type="checkbox" id="I6" value="Bike"> Cloudy <br><br>
       </div>
 
       <div id="Q3">
@@ -37,25 +37,26 @@
       <div id="Q4">
 
         <label for="Q4">Q4:What Is Your aim?</label><br>
-        <input type="checkbox" id="I10" value="Bike"> To be a DOctor
+        <input type="checkbox" id="I10" value="Bike"> To be a Doctor
         <input type="checkbox" id="I11" value="Bike"> To be a Pilot
-        <input type="checkbox" id="I12" value="Bike"> To be a singer<br><br>
+        <input type="checkbox" id="I12" value="Bike"> To be a singer
+        <input type="checkbox" id="I13" value="Bike"> Something Better<br><br>
       </div>
 
       <div id="Q5">
 
         <label for="Q5">Q5:What are your obstacles?</label><br>
-        <input type="checkbox" id="I13" value="Bike"> Physical
-        <input type="checkbox" id="I14" value="Bike"> Emotional
-        <input type="checkbox" id="I15" value="Bike"> Other<br><br>
+        <input type="checkbox" id="I14" value="Bike"> Physical
+        <input type="checkbox" id="I15" value="Bike"> Emotional
+        <input type="checkbox" id="I16" value="Bike"> Other<br><br>
       </div>
       
       <div id="Q6">
 
         <label for="Q6">Q6:Do you think you can overcome your obstacles?</label><br>
-        <input type="checkbox" id="I16" value="Bike"> Yes
-        <input type="checkbox" id="I17" value="Bike"> No
-        <input type="checkbox" id="I18" value="Bike"> Maybe<br><br>
+        <input type="checkbox" id="I17" value="Bike"> Yes
+        <input type="checkbox" id="I18" value="Bike"> No
+        <input type="checkbox" id="I19" value="Bike"> Maybe<br><br>
       </div>
       </div>
       <input type='hidden' name='_token' value='{{Session::token()}}'>

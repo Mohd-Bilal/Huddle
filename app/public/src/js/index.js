@@ -69,4 +69,7 @@ $('#secpage').on('click',function(){
         method:'GET',
         url:''
     })
+    var msg = new SpeechSynthesisUtterance('Hello World');
+    window.speechSynthesis.speak(msg);
+
 });

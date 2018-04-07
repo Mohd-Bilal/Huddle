@@ -3,7 +3,11 @@
 @section('title')
 Sign In | D'Lite
 @endsection
+<script>
+    var msg = new SpeechSynthesisUtterance('Welcome to DeLite.Enter your email and password ');
+    window.speechSynthesis.speak(msg);
 
+</script>
 @section('body')
  <h1 class="text-center">Sign In</h1>
  <br>
@@ -17,7 +21,7 @@ Sign In | D'Lite
        </div>
        <div class="form-group">
          <label for="password">Your Password:</label>
-         <input type="text" class="form-control" id="password" name="password">
+         <input type="password" class="form-control" id="password" name="password">
        </div>
        @if($Error=="Wrong password")
        <div class="alert alert-danger" role="alert">

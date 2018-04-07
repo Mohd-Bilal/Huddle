@@ -25,31 +25,54 @@
 </head>
 <body>
 
-<h2>Card</h2>
-
-<div class="col-sm-6">
+<h2 class="text-center"><b>Mentors</b></h2><br><br>
+<div class="row">
+<div class="col-md-6" style="padding-left:10%;">
   <img src="{{asset('src/css/avatar.png')}}" alt="Avatar" style="width:50%">
   <div class="container">
     <h4><b>John Doe</b></h4> 
     <p>Architect & Engineer</p> 
   </div>
 </div>
-<div class="col-sm-6">
-<table class="w3-table">
-    <tr>
-      <td>Alma matter</td>
-      <td>ABC college of engineering</td>
-  
-  </tr>
-    <tr>
-      <td>Description</td>
-      <td>Over 10 years of experience in mentoring with D'Lite. 
-      A very well experienced veteran in architectural planning and engineering...................................................................................................................................................................</td>
-     
-    </tr>
-    
-  </table>
+<div class="col-md-4">
+     <h4><b>Alma Mater:</b></h4>
+     <ul>
+      <li>ABC College Of Engineering</li>
+      <li>ABC College Of Engineering</li>
+     </ul>
+     <br>
+     <h4><b>Description:</b></h4>
+     <ul>
+      <li>Experience Of Over 10 Years As Prime Mentor At D'Lite</li>
+      <li>Expertise Over Human Psychology And Behaviour</li>
+     </ul>
+</div>
+</div>
+<br>
+<hr>
+<br>
+<div class="row">
+<div class="col-md-6" style="padding-left:10%;">
+  <img src="{{asset('src/css/avatar.png')}}" alt="Avatar" style="width:50%">
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
   </div>
-
+</div>
+<div class="col-md-4">
+     <h4><b>Alma Mater:</b></h4>
+     <ul>
+      <li>ABC College Of Engineering</li>
+      <li>ABC College Of Engineering</li>
+     </ul>
+     <br>
+     <h4><b>Description:</b></h4>
+     <ul>
+      <li>Experience Of Over 10 Years As Prime Mentor At D'Lite</li>
+      <li>Expertise Over Human Psychology And Behaviour</li>
+     </ul>
+</div>
+</div>
 </body>
 </html> 
+<hr>
