@@ -52,7 +52,7 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openCity(event, 'Paris')">Daily Task</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Achievements</button>
   <button class="tablinks" onclick="openCity(event, 'Amsterdam')">Task progress</button>
-  <button class="tablinks" onclick="openCity(event, 'Delhi')">Mentor</button>
+<a href="thirdpage">  <button class="tablinks" onclick="openCity(event, 'Delhi')">Mentor</button></a>
   <button class="tablinks" onclick="openCity(event, 'Berlin')">Community and group </button>
 </div>
 

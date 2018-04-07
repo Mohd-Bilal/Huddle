@@ -47,3 +47,6 @@ Route::get('/home',function(){
 Route::get('/secpage',function(){
     return view('feed');
 })->name('secpage');
+Route::get('/thirdpage',function(){
+    return view('thirdpage');
+})->name('thirdpage');
