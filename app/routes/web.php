@@ -43,3 +43,7 @@ Route::post('/interest',[
 Route::get('/home',function(){
     return view('home');
 })->name('home');
+
+Route::get('/secpage',function(){
+    return view('feed');
+})->name('secpage');
