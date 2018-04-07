@@ -1,11 +1,11 @@
 @extends('master')
 
 @section('title')
- Quiz | D'Lite'
+ Personality Index | D'Lite'
 @endsection
 
 @section('body')
-<h1 class="text-center">Quiz</h1>
+<h1 class="text-center">Personality Index</h1>
 <br>
 <div class="row">
     <div class="col-md-3"></div>
@@ -37,26 +37,35 @@
       <div id="Q4">
 
         <label for="Q4">Q4:What Is Your aim?</label><br>
-        <input type="checkbox" id="I10" value="Bike"> To be a Doctor
-        <input type="checkbox" id="I11" value="Bike"> To be a Pilot
-        <input type="checkbox" id="I12" value="Bike"> To be a singer
-        <input type="checkbox" id="I13" value="Bike"> Something Better<br><br>
+        <input type="checkbox" id="I10" value="Bike"> To be Rich
+        <input type="checkbox" id="I11" value="Bike"> To help someone
+        <input type="checkbox" id="I12" value="Bike"> To bring a change
+        <input type="checkbox" id="I13" value="Bike"> Nothing in particular
+        <input type="checkbox" id="I14" value="Bike"> Other<br><br>
       </div>
 
       <div id="Q5">
 
         <label for="Q5">Q5:What are your obstacles?</label><br>
-        <input type="checkbox" id="I14" value="Bike"> Physical
-        <input type="checkbox" id="I15" value="Bike"> Emotional
-        <input type="checkbox" id="I16" value="Bike"> Other<br><br>
+        <input type="checkbox" id="I15" value="Bike"> Physical
+        <input type="checkbox" id="I16" value="Bike"> Emotional
+        <input type="checkbox" id="I17" value="Bike"> Other<br><br>
       </div>
       
       <div id="Q6">
 
         <label for="Q6">Q6:Do you think you can overcome your obstacles?</label><br>
-        <input type="checkbox" id="I17" value="Bike"> Yes
-        <input type="checkbox" id="I18" value="Bike"> No
-        <input type="checkbox" id="I19" value="Bike"> Maybe<br><br>
+        <input type="checkbox" id="I18" value="Bike"> Yes
+        <input type="checkbox" id="I19" value="Bike"> No
+        <input type="checkbox" id="I20" value="Bike"> Maybe<br><br>
+      </div>
+      <div id="Q7">
+
+        <label for="Q7">Q7:If Physical,Can you tell us what are they?</label><br>
+        <input type="checkbox" id="I18" value="Bike"> Hard of Hearing
+        <input type="checkbox" id="I19" value="Bike"> Blind
+        <input type="checkbox" id="I20" value="Bike"> Autistic
+        <input type="checkbox" id="I21" value="Bike"> Amputee<br><br>
       </div>
       </div>
       <input type='hidden' name='_token' value='{{Session::token()}}'>

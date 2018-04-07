@@ -4,9 +4,14 @@
 Sign In | D'Lite
 @endsection
 <script>
-    var msg = new SpeechSynthesisUtterance('Welcome to DeLite.Enter your email and password ');
-    window.speechSynthesis.speak(msg);
+    var msg = new SpeechSynthesisUtterance('Welcome to DeLite');
+    msg.rate = 0.6; // 0.1 to 10
 
+    window.speechSynthesis.speak(msg);
+    var msg = new SpeechSynthesisUtterance('Enter your email and password');
+    msg.rate = 0.6; // 0.1 to 10
+    window.speechSynthesis.speak(msg);
+    
 </script>
 @section('body')
  <h1 class="text-center">Sign In</h1>
